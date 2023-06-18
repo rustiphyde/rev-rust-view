@@ -9,15 +9,10 @@ import { Provider } from "react-redux";
 import store from "./redux/store";
 
 // Components
-import Header from "./components/header/Header";
-import Footer from "./components/footer/Footer";
+import { Header, Footer } from "./components";
 
 // Pages
-import { Home, Songs, Events, Merch } from "./pages";
-import Contact from "./pages/contact/Contact";
-import Orders from "./pages/orders/Orders";
-import Cart from "./pages/cart/Cart";
-import Checkout from "./pages/checkout/Checkout";
+import { Home, Songs, Events, Merch, Contact, Orders, Cart, Checkout, Admin } from "./pages";
 
 axios.defaults.baseURL = "https://us-central1-rev-rust.cloudfunctions.net/api";
 
