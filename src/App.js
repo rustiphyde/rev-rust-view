@@ -19,7 +19,7 @@ import { createTheme } from '@mui/material/styles';
 
 // Components
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import Footer from "./components/footer/Footer";
 
 // Pages
 import user from "./pages/user";
