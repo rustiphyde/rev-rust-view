@@ -1,5 +1,35 @@
-import logo from './logo.svg';
+import React, { Component } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import jwtDecode from "jwt-decode";
+import axios from 'axios';
 import './App.css';
+
+// Redux
+import { Provider } from "react-redux";
+import store from "./redux/store";
+import { SET_AUTHENTICATED } from './redux/types';
+import { logoutUser, getUserDetails } from './redux/actions/userActions';
+
+// Util imports
+import themeFile from "./util/theme";
+import AuthRoute from "./util/AuthRoute";
+
+// MUI Components
+import { createTheme } from '@mui/material/styles';
+
+// Components
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+
+// Pages
+import user from "./pages/user";
+import home from "./pages/home";
+import login from "./pages/login";
+import signup from "./pages/signup";
+import reset from './pages/reset';
+import about from './pages/about';
+
+axios.defaults.baseURL = "https://us-central1-rev-rust.cloudfunctions.net/api";
 
 function App() {
   return (
@@ -7,16 +37,8 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Content coming soon. Stay tuned
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
     </div>
   );
