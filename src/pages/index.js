@@ -7,3 +7,7 @@ export { default as Orders } from "./orders/Orders";
 export { default as Admin } from "./admin/Admin";
 export { default as Cart } from "./cart/Cart";
 export { default as Checkout } from "./checkout/Checkout";
+export { default as Login } from "./auth/Login";
+export { default as Join } from "./auth/Join";
+export { default as Reset } from "./auth/Reset";
+export { default as Account } from "./account/Account";

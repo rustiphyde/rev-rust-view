@@ -8,32 +8,27 @@
   
   header {
     width: 100%;
-    background-color: #2b1106;
+    background-color: #3d1c03;
     color: #faf7ae;
   
     .header {
       width: 100%;
-      height: 8rem;
-      max-width: 1000px;
+      height: 6rem;
+      max-width: 1600px;
       margin: 0 auto;
-      padding: 1rem;
+      padding: 2rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
       position: relative;
     }
   
-    .logo a h2 {
-      width: 25%;
-      color: #fff;
+    .logo {
       cursor: pointer;
-      span {
-        color: orangered;
-      }
     }
   
     nav {
-      width: 75%;
+      width: 100%;
       display: flex;
       justify-content: space-between;
       ul {
@@ -48,9 +43,9 @@
         li {
           margin: 0 5px;
           a {
-            color: #fff;
+            color: #faf7ae;
             &:hover {
-              color: orangered;
+              color: #ff8c00;
             }
           }
         }
@@ -60,15 +55,21 @@
     .header-right {
       display: flex;
   
-      .cart a {
+      .cart {
         display: flex;
-        color: #fff;
+        color: #faf7ae;
         position: relative;
         &:hover {
-          color: orangered;
+          svg {
+            fill: #b7410e;
+          }
         }
         &.active {
           color: var(--color-danger);
+
+          svg {
+            fill: #b7410e;
+          }
         }
         p {
           position: absolute;
@@ -76,24 +77,27 @@
           right: -1rem;
           font-weight: 500;
         }
+        svg {
+          fill: #ff9800;
+        }
       }
   
       span {
         margin: 0 5px;
   
         p {
-          color: #fff;
+          color: #faf7ae;
         }
       }
   
       .links a {
         margin: 0 5px;
-        color: #fff;
+        color: #faf7ae;
         &:hover {
-          color: orangered;
+          color: #ff8c00;
         }
         &.active {
-          color: var(--color-danger);
+          color: #ff8c00;
         }
       }
     }
@@ -111,7 +115,7 @@
         left: 0;
         width: 50%;
         height: 100vh;
-        background-color: var(--dark-blue);
+        background-color: #3d1c03;
         padding: 1rem;
         z-index: 999;
         transform: translateX(-200%);
@@ -123,7 +127,7 @@
           right: 0;
           width: 100%;
           height: 100vh;
-          background-color: rgba(46, 3, 3, 0.5);
+          background-color: rgba(46, 21, 3, 0.5);
           transform: translateX();
           transition: all 0.3s;
         }
@@ -184,7 +188,7 @@
         padding: 5px 0;
         // border-bottom: 1px solid #333;
         a {
-          color: #fff;
+          color: #faf7ae;
           position: relative;
           &:hover {
             color: orangered;
@@ -192,9 +196,9 @@
           p {
             position: absolute;
             top: -1rem;
-            left: 5rem;
+            left: 2rem;
             font-weight: 500;
-            color: #fff;
+            color: #faf7ae;
           }
         }
       }
@@ -215,7 +219,7 @@
   
   .active {
     position: relative;
-    color: var(--color-danger);
+    color: #ff8c00;
   }
   
   .active::after {
@@ -225,5 +229,5 @@
     bottom: -3px;
     width: 100%;
     height: 2px;
-    background-color: #fff;
+    background-color: #ff9800;
   }

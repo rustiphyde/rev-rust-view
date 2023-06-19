@@ -1,0 +1,20 @@
+.footer {
+    background-color: #3d1c03;
+    color: #faf7ae;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    height: 8rem;
+    p {
+      color: #faf7ae;
+    }
+
+    a {
+      color: #faf7ae;
+      &:hover {
+        color: #ff8c00;
+      }
+    }
+  }
